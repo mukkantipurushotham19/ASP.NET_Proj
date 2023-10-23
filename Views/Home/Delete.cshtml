@@ -1,0 +1,54 @@
+﻿@model CrudWithDBFA.Models.Employee
+
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <script src="~/Scripts/bootstrap.js"></script> />
+
+</head>
+<body>
+
+    <div class="container">
+        <dl>
+            <dt>Employee Number</dt>
+            <dd>@Model.Eno</dd>
+            <dt>Ename</dt>
+            <dd>@Model.EName</dd>
+            <dt>Job</dt>
+            <dd>@Model.Job</dd>
+            <dt>Salary</dt>
+            <dd>@Model.Salary</dd>
+            <dt>Dname</dt>
+            <dd>@Model.Dname</dd>
+        </dl>
+    </div>
+
+    <form action="" method="post">
+        Are you sure you want to delete? &nbsp;&nbsp;
+
+        <input type="submit" name="btnDelete" value="Delete" class="btn btn-danger" />
+
+    </form>
+    <a href="/" class="btn btn-warning">Back To Home</a>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

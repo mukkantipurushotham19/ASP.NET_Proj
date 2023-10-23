@@ -1,0 +1,61 @@
+﻿@model List<CrudWithDBFA.Models.Employee>
+
+
+<html>
+    <head>
+        
+
+    </head>
+
+    <body >
+        <div>
+
+        </div>
+        <div>
+            <a href="/Home/Create">Add Employee</a>
+        </div>
+       <table align="center" border="1" >
+       <tr>
+       <th>Eno</th>
+       <th>Ename</th>
+       <th>Job</th>
+       <th>Salary</th>
+       <th>Dname</th>
+       <th>Edit     |   Delete  |   Details</th>
+       </tr>
+
+       @{  
+            foreach (var item in Model)
+            {
+              <tr>
+               <td>@item.Eno</td>
+               <td>@item.EName</td>
+               <td>@item.Job</td>
+               <td>@item.Salary</td>
+               <td>@item.Dname</td>
+                    <td>
+                    <a href="/Home/Edit/@item.Eno">Edit</a>
+                    <a href="/Home/Delete/@item.Eno">Delete</a>
+                    <a href="/Home/Details/@item.Eno">Details</a>
+                    </td>
+              </tr>
+            }
+       }
+    </table>
+        
+        
+    
+
+    </body>
+
+
+</html>
+
+
+
+
+
+
+
+
+

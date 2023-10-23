@@ -1,0 +1,54 @@
+﻿  
+@model CrudWithDBFA.Models.Employee
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+    <form action="" method="post">
+        <div>
+            <lable>
+                Enter Employee Id
+            </lable>
+            <input type="text" name="Eno" readonly value="@Model.Eno" />
+        </div>
+        <div>
+            <lable>
+                Enter Employee Name
+            </lable>
+            <input type="text" name="EName" value="@Model.EName" />
+        </div>
+        <div>
+            <lable>
+                Enter Employee Job
+            </lable>
+            <input type="text" name="Job" value="@Model.Job" />
+        </div>
+        <div>
+            <lable>
+                Enter Employee Salary
+            </lable>
+            <input type="text" name="Salary" value="@Model.Salary" />
+        </div>
+        <div>
+            <lable>
+                Enter Employee Dname
+            </lable>
+            <input type="text" name="Dname" value="@Model.Dname" />
+        </div>
+
+        <input type="submit" name="" value="Update" />
+
+    </form>
+    <br />
+    <div>
+        <a href="/">Back To Home</a>
+    </div>
+    <br />
+    @ViewBag.Mes
+
+
+</body>
+</html>
+
